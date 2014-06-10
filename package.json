@@ -1,0 +1,16 @@
+{
+  "name": "linkedin",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "index.js"
+  },
+  "author": "",
+  "license": "none",
+  "devDependencies": {
+    "phantomjs": "~1.9.7-8",
+    "picture-tube": "0.0.4"
+  }
+}
