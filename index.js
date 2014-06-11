@@ -2,6 +2,8 @@ var exec = require('child_process').exec;
 var pictureTube = require('picture-tube');
 var dims = process.stdout.getWindowSize();
 
+console.log('Source @ https://github.com/Jakobo/linkedin-profile');
+
 exec('./node_modules/.bin/phantomjs ./img.js', function(err, stdout, stderr) {
   if (err) {
     console.log(err);
