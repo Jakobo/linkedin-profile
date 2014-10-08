@@ -1,10 +1,16 @@
 var exec = require('child_process').exec;
 var pictureTube = require('picture-tube');
 var dims = process.stdout.getWindowSize();
+var which = require('npm-which');
+var path = require('path');
+
+// locate the correct phantom and img script
+var phantom = which.sync('phantomjs', {cwd: __dirname});
+var imgScript = path.join(__dirname, 'img.js');
 
 console.log('Source @ https://github.com/Jakobo/linkedin-profile');
 
-exec('./node_modules/.bin/phantomjs ./img.js', function(err, stdout, stderr) {
+exec(phantom + ' ' + imgScript, function(err, stdout, stderr) {
   if (err) {
     console.log(err);
     process.exit(1);
