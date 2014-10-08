@@ -5,7 +5,7 @@
   "description": "",
   "main": "index.js",
   "bin": {
-    "jakobheuser": "./index.js"
+    "jakobheuser": "./bin.js"
   },
   "scripts": {
     "test": "echo 'Tests should have meaning and not exist \"just because\"' && exit 1"
