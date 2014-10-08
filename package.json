@@ -1,15 +1,17 @@
 {
   "private": true,
-  "name": "linkedinprofile",
+  "name": "linkedin-profile",
   "version": "0.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "image": "node index.js"
+  "bin": {
+    "jakobheuser": "./index.js"
   },
-  "author": "",
-  "license": "none",
+  "scripts": {
+    "test": "echo 'Tests should have meaning and not exist \"just because\"' && exit 1"
+  },
+  "author": "Jakob Heuser",
+  "license": "MIT",
   "devDependencies": {
     "phantomjs": "~1.9.7-8",
     "picture-tube": "0.0.4"
