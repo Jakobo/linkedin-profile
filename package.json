@@ -13,6 +13,7 @@
   "author": "Jakob Heuser",
   "license": "MIT",
   "dependencies": {
+    "npm-which": "^1.0.1",
     "phantomjs": "~1.9.7-8",
     "picture-tube": "0.0.4"
   }
